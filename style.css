@@ -1,0 +1,111 @@
+html{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #000;
+}
+.heading{
+	text-align: center;
+	color: white;
+}
+.container{
+	width: 700px;
+	min-height: 100px;
+	margin: 70px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.container .box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.container .box .imgbox{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgbox img{
+	max-width: 450px;
+	height: 300px;
+	transition: transform 2s;
+
+}
+.container .box:hover .imgbox img{
+	transform: scale(1.2);
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+.container .box .doujin{
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	right: 10px;
+	left: 10px;
+	transform: scaleY(0);
+	transition: transform .5s;
+	display: block;
+	background: rgba(0,0,0,.8);
+}
+.container .box .doujin .content{
+	position: absolute;
+	top: 30%;
+	left: 19%;
+	text-align: center;	
+	color: white;
+	text-decoration: none;
+}
+.container .box .doujin .content h2{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+.container .box .doujin .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	text-decoration: none;
+}
+.container .box:hover .doujin{
+	transform: scaleY(1);
+
+}
+.container .box .WIP{
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	right: 10px;
+	left: 10px;
+	transform: scaleY(0);
+	transition: transform .5s;
+	display: block;
+	background: rgba(0,0,0,.8);
+}
+.container .box .WIP .content{
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	text-align: center;	
+	color: white;
+	text-decoration: none;
+}
+.container .box .WIP .content h2{
+	margin: 40px;
+	padding: 0;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+.container .box .WIP .content p{
+	margin: 10px 0 0;
+	padding: 0;
+	text-decoration: none;
+}
+.container .box:hover .WIP{
+	transform: scaleY(1);
+
+}
